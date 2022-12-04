@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 print("Reading Data")
-data = pd.read_csv("features/overall_samples.txt", sep=',', header=0)
+data = pd.read_csv("features/all_features.txt", sep=',', header=0)
 
 col1 = data.columns.tolist()
 column_length = len(col1)

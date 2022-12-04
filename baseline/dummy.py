@@ -5,7 +5,7 @@ from sklearn.model_selection import KFold, train_test_split
 
 # Read Data
 print("Reading Data")
-data = pd.read_csv("../baseline/overall_features.txt", sep=',', header=None)
+data = pd.read_csv("features/all_features.txt", sep=',', header=None)
 
 # Organise Data
 print("Organising Data")
