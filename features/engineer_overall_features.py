@@ -118,12 +118,12 @@ sources = ['iron.txt','bronze.txt','silver.txt','gold.txt','plat.txt','diamond.t
 for src in sources:
     samples= []
     print(f'Reading {src}')
-    with open('../raw_samples/'+src, 'r') as f:
+    with open('raw_samples/'+src, 'r') as f:
         for line in f.readlines():
                 samples.append(line.split('|'))
 
     print(f'Engineering {src}')
-    dest = 'overall_samples.txt'
+    dest = 'features/all_features.txt'
     for sample in samples:
         sample = engineerSample(sample)
         if (sample != []):
